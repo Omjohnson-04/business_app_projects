@@ -63,3 +63,76 @@ if (!email) --> "if theres no email..."
 let discount = userInput || 0.05; --> "let discount be user input or 5% discount"
 */
 
+
+
+
+
+// SEPTEMBER 08 2025 ARRAYS
+
+// ARRAYS (same as Python lists)
+/*
+
+- Arrays indexed from 0
+["Laptop", "Phone", "Tablet"]
+[   0    ,    1   ,    2    ]
+
+- Nested Arrays (Array inside an array)
+namesArray = [["Owen", "Amelia"], ["Will", "Stephen"], ["Carsen", "Max"]]
+             [[       0        ]  [       1         ]  [       2       ]]
+namesArray[0][1] = "Amelia"
+
+- Array Methods
+arr = [1,2,3,4,5,6]
+
+arr.push(10) -> adds 10 to end -> [1,2,3,4,5,6,10]
+
+my_pop = arr.pop() -> grabs the last item from array and takes it out of array => 10
+console.log(arr) -> now list doesnt have last item -> [1,2,3,4,5,6]
+
+my_shift = arr.shift()
+console.log(my_shift) -> remove from start -> [2,3,4,5,6]
+
+arr.unshift -> Add to start
+arr.length -> Number of items
+
+arr.forEach(   
+    console.log(element);    -> loops through each item
+) 
+
+.reduce() -> combine into one value -> [1200, 1350, 1500, 2000] -> (0 + 1200 = 1200, 1200 + 1350 = 2550, 2550 + 1500 = 4050, 4050 + 2000 = 6050)
+arr.reduce((sum, v) => sum + v, 0);
+
+let sales = [23345, 453, 24755, 8554, 33456]
+avg = sales.reduce((total_sales, sale) => total_sales + sale,0 ) sale/sales.length);
+
+.map() -> makes a new array of a function
+.filter() uses function to take items out based on that conditions
+
+- Javascript Objects
+{Key : Value}
+example:
+let customer = {
+    name: "Alice",
+    job: "Street-poet"
+    salary: false,
+    debt: true,
+}
+
+console.log(customer.name) -> Alice
+console.log(customer["name"]) -> Alice
+
+console.log('
+    Name: ${customer.name}
+    Job: ${customer.job}
+)
+*/
+
+
+
+
+
+
+/* SEPTEMBER 10, 2025
+
+
+*/
