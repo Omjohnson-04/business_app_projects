@@ -43,8 +43,7 @@ let lastLogin = true (lowercase, boolean)
 && - both true - "AND"
 || -     or    - "at least one true"
 !  -    NOT    - "reverses value"
-*/
-/* 
+
 if (orderComplete && paymentRecieved) {
     console.log("Ship the order") 
 }
@@ -62,9 +61,6 @@ everythig else = truthy
 if (!email) --> "if theres no email..."
 let discount = userInput || 0.05; --> "let discount be user input or 5% discount"
 */
-
-
-
 
 
 // SEPTEMBER 08 2025 ARRAYS
@@ -128,11 +124,90 @@ console.log('
 */
 
 
+/* SEPTEMBER 15, 2025
+The "if" statement
+- Same as python basically
+
+if (revenue > 100000) {
+    console.log(revenue);
+} else {
+    console.log("Not available.");
+}
 
 
+COMPLEX CONDITIONS
+- if $$ (and)
+    - if (cartTotal > 100 && cartTotal < 200) {
+    console.log(cartTotals)};
+
+- if || (or)
+    - if (cartTotal > 100 || cartTotal < 200) {
+    console.log(cartTotals)};
+
+- if ! (not)
+    - if (cartTotal ! (100 || 200) {
+    console.log(cartTotals)};
 
 
-/* SEPTEMBER 10, 2025
+CHAINED IF...ELSE IF
+- Starts from the tp and works way to bottom
+    - If anything becomes true, it stops checking if else statements
 
+if (orderTotal >= 600) {
+    console.log("Platinum: 20% off");
+}   else if (orderTotal >= 500) {
+    console.log("Diamond: 15% off");
+}   else if (orderTotal >= 400) {
+    console.log("Gold: 10% off");
+}
+
+SWITCH STATEMENTS
+- Cleaner than long if else statements
+
+switch (departmentCode) {
+    case "HR":
+        console.log("redirect to HR Portal");
+        break;
+    case "IT":
+        console.log("redirecting to IT portal")
+        break;
+    case "FINANCE":
+        console.log("redirecting to FINANCE portal");
+}
+
+WHILE LOOPS
+- Runs until condition is false
+
+let countDown = 10;
+while (countDown > 0) {
+    console.log("T-minus " + count_down);
+    count_down--;
+}
+-- = minus one from variable
+
+
+FOR LOOPS
+- sameish as python
+
+let prices = [1.0, 2.0, 3.0, 4.0, 5.0]
+for (let index = 0; index < prices.length; index++) {
+    if (prices[index] < 3.1) {
+        console.log("This is a cheap price");
+    }
+}
+
+
+FOR-OF LOOPS
+- same thing as .forEach()
+
+
+FOR-IN LOOPS
+- Loops through keys of an object
+- "If key is 'url', console log 'url'."
+
+for (const key in product) {
+    const element = product[key];
+    console.log(`${key}: ${element}`);
+}
 
 */
