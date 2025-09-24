@@ -211,3 +211,55 @@ for (const key in product) {
 }
 
 */
+
+
+
+
+/* --FUNCTIONS-- SEPTEMBER 22nd 2025
+--Declaring a function--
+ - Decleration is the function
+  - Calling a function is calling it to do it's job
+function greetUser() {
+    console.log("Welcome to our business dashboard")
+ }
+
+
+--Returning--
+function calcTotalPrice(price, taxRate) {
+    return price + (price * taxRate);
+} 
+ - Used in tax / finance
+ - Automated reporting
+ - Data transformations
+
+ --Parameters--
+  - f(x)
+  - Functions accept inputs (parameters
+  - Types: strings, numbers, objects, arrays, even functions
+function funMath(a, b, fun) {
+    return fun(a, b);
+}
+
+--Side Effects--
+ - Changes outside state (In this case it changes userCount)
+let userCount = 0
+
+function addUser(username) {
+    userCount++;
+    console.log(`Welcome ${username}. There are now ${userCount} users.`)
+}
+
+addUser("Bob")
+addUser("Bobby")
+
+--Functions as Arguments--
+ - Enables modular and dynamic logic
+
+
+--Quick Logic--
+const name = () => {};
+const multiply = (x, y) => {x * y};
+
+--Higher Order Functions--
+ - Functions that take or return other functions
+*/
