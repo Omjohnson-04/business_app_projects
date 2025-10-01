@@ -263,3 +263,125 @@ const multiply = (x, y) => {x * y};
 --Higher Order Functions--
  - Functions that take or return other functions
 */
+
+
+
+
+/*INTRODUCTION TO CLASSES
+- Reduce code duplication
+- Template for data
+- Each instance is a record
+
+    class example:
+
+        class Employee {
+            constructor(name, department) {
+                this.name = name;
+                this.department = department;
+            }
+
+            describe() {
+                return `${this.name} works in ${this.department} department.`
+            }
+        }
+
+        const emp1 = new employee('Owen Johnson', 'Tech')
+        console.log(emp1.describe()) --> returns "Owen Johnson works in Tech department"
+
+
+    Array example:
+
+    class Employee {
+            constructor(name, department, level = "Associate") {
+                this.name = name;
+                this.department = department;
+                this.level = level;
+            }
+
+            describe() {
+                return `${this.name} works in ${this.department} department.`
+            }
+
+            promote() {
+                if (this.level === "Associate") {
+                    this.level = "Manager"
+                }
+                else if (this.level === "Manager") {
+                    this.level = "Director"
+                }
+                else if (this.level === "Director") {
+                    this.level = "Executive"
+                }
+            }
+        }
+
+    employees = [
+    new Employee("Bob", "Accounting"),
+    new Employee("Stephen", "Mechanic"),
+    new Employee("William", "Food")
+    ]
+
+    for (const employee of employees) {
+    console.log(employee.describe())
+    }
+
+INHERITANCE
+
+    class Employee {
+            constructor(name, department, level = "Associate") {
+                this.name = name;
+                this.department = department;
+                this.level = level;
+            }
+
+            describe() {
+                return `${this.name} works in ${this.department} department.`
+            }
+
+            promote() {
+                if (this.level === "Associate") {
+                    this.level = "Manager"
+                }
+                else if (this.level === "Manager") {
+                    this.level = "Director"
+                }
+                else if (this.level === "Director") {
+                    this.level = "Executive"
+                }
+            }
+        }
+
+    employees = [
+    new Employee("Bob", "Accounting"),
+    new Employee("Stephen", "Mechanic"),
+    new Employee("William", "Food")
+    ]
+
+    for (const employee of employees) {
+    console.log(employee.describe())
+    }
+
+    class Manager extends Employee {
+        constructor(name, department, level) {
+            super(name, department, level);
+            this.teamSize = teamSize;
+        }
+
+        describe() {
+            return `$(this.name) manages ${this.teamSize} employees.`;
+        }
+
+        isExecutiveLevel() {
+            return this.teamSize >= 10;
+        }
+    }
+    
+    let manager = new Manager("Tim", "Tools", teamSize = 10);
+
+    console.log(manager.describe())
+    const m = new Manager("Travis", "Engineering", 12)
+    if (m.isExecutiveLevel()) {
+        return m
+    }
+
+*/
